@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Madhura Supermarket</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2" style="background: var(--accent-gold); opacity: 0.2;"></div>
+    </div>
+    <div class="admin-layout">
+        <aside class="sidebar">
+            <a href="index.html" class="logo" style="margin-bottom: 20px;">
+                <i class="fa-solid fa-leaf"></i> Madhura <span>Admin</span>
+            </a>
+            <nav class="sidebar-nav">
+                <a href="#" class="active"><i class="fa-solid fa-chart-line"></i> Dashboard</a>
+                <a href="#"><i class="fa-solid fa-box"></i> Orders</a>
+                <a href="#"><i class="fa-solid fa-tags"></i> Products</a>
+                <a href="#"><i class="fa-solid fa-users"></i> Customers</a>
+            </nav>
+            <div style="margin-top: auto;">
+                <a href="index.html" class="btn btn-glass" style="width: 100%; justify-content: center;">
+                    <i class="fa-solid fa-store" style="margin-right: 10px;"></i> View Store
+                </a>
+            </div>
+        </aside>
+        <main class="admin-main">
+            <div class="admin-header">
+                <h2>Dashboard Overview</h2>
+                <div style="display: flex; gap: 15px; align-items: center;">
+                    <div style="text-align: right;"><div style="font-weight: 600;">Admin User</div><div style="font-size: 0.8rem; color: var(--text-muted);">Manager</div></div>
+                    <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--accent-gold); display: flex; align-items: center; justify-content: center; color: var(--bg-dark); font-weight: bold;">A</div>
+                </div>
+            </div>
+            <div class="stat-grid">
+                <div class="glass-card stat-card"><div class="stat-icon"><i class="fa-solid fa-indian-rupee-sign"></i></div><div class="stat-info"><h4>Total Revenue</h4><p>₹1,24,500</p></div></div>
+                <div class="glass-card stat-card"><div class="stat-icon"><i class="fa-solid fa-shopping-cart"></i></div><div class="stat-info"><h4>Total Orders</h4><p>342</p></div></div>
+                <div class="glass-card stat-card"><div class="stat-icon"><i class="fa-solid fa-users"></i></div><div class="stat-info"><h4>Customers</h4><p>1,204</p></div></div>
+                <div class="glass-card stat-card"><div class="stat-icon"><i class="fa-solid fa-triangle-exclamation"></i></div><div class="stat-info"><h4>Low Stock Items</h4><p style="color: #ff6b6b;">12</p></div></div>
+            </div>
+            <div class="dashboard-grid">
+                <div class="glass-panel" style="padding: 25px;">
+                    <h3 style="margin-bottom: 20px; color: var(--primary-mint);">Recent Orders</h3>
+                    <div class="admin-table-wrapper">
+                        <table class="admin-table">
+                            <thead><tr><th>Order ID</th><th>Customer</th><th>Date</th><th>Amount</th><th>Status</th><th>Action</th></tr></thead>
+                            <tbody>
+                                <tr><td>#ORD-7829</td><td>Rahul Sharma</td><td>Today, 10:23 AM</td><td>₹1,450</td><td><span class="status-badge status-pending">Pending</span></td><td><button class="btn-glass btn-icon"><i class="fa-solid fa-eye"></i></button></td></tr>
+                                <tr><td>#ORD-7828</td><td>Priya Patel</td><td>Today, 09:15 AM</td><td>₹890</td><td><span class="status-badge status-processing">Processing</span></td><td><button class="btn-glass btn-icon"><i class="fa-solid fa-eye"></i></button></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="glass-panel" style="padding: 25px;">
+                    <h3 style="margin-bottom: 20px; color: var(--primary-mint);">Top Products</h3>
+                    <div style="display: flex; flex-direction: column; gap: 15px;">
+                        <div style="display: flex; align-items: center; gap: 15px; padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;">
+                            <div style="width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center;">🍎</div>
+                            <div style="flex-grow: 1;"><div style="font-weight: 500;">Fresh Kashmiri Apples</div><div style="font-size: 0.8rem; color: var(--text-muted);">145 Sales</div></div>
+                            <div style="font-weight: 600; color: var(--accent-gold);">₹28,500</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
