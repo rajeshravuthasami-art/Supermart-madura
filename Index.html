@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madhura Supermarket | Premium Groceries</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div><div class="blob blob-2"></div><div class="blob blob-3"></div>
+    </div>
+    <header class="glass">
+        <a href="index.html" class="logo"><i class="fa-solid fa-leaf"></i> Madhura <span>Supermarket</span></a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li><li><a href="#categories">Categories</a></li>
+            <li><a href="#products">Products</a></li><li><a href="#offers">Offers</a></li>
+            <li><a href="admin.html">Admin</a></li>
+        </ul>
+        <div class="header-actions">
+            <button class="btn-glass btn-icon"><i class="fa-solid fa-search"></i></button>
+            <button class="btn-glass btn-icon"><i class="fa-regular fa-heart"></i></button>
+            <div class="cart-icon-wrapper">
+                <button class="btn-glass btn-icon" id="open-cart-btn"><i class="fa-solid fa-shopping-bag"></i></button>
+                <span class="cart-badge" id="cart-count">0</span>
+            </div>
+            <button class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Freshness <span class="text-gradient">Delivered</span> to Your Door.</h1>
+            <p class="hero-subtitle">Discover quality groceries, everyday essentials, and exclusive offers at Madhura Supermarket. Experience the future of grocery shopping.</p>
+            <div class="hero-actions">
+                <a href="#products" class="btn btn-primary">Shop Now</a>
+                <a href="#offers" class="btn btn-glass">Explore Offers</a>
+            </div>
+        </div>
+    </section>
+    <section id="categories" class="section">
+        <h2 class="section-title">Shop by <span class="text-gradient">Category</span></h2>
+        <div class="category-grid">
+            <a href="#" class="glass-card category-card" data-category="fruits"><div class="category-icon">🍎</div><h3>Fruits & Veg</h3></a>
+            <a href="#" class="glass-card category-card" data-category="grains"><div class="category-icon">🌾</div><h3>Rice & Grains</h3></a>
+            <a href="#" class="glass-card category-card" data-category="dairy"><div class="category-icon">🥛</div><h3>Dairy & Eggs</h3></a>
+            <a href="#" class="glass-card category-card" data-category="snacks"><div class="category-icon">🥨</div><h3>Snacks</h3></a>
+            <a href="#" class="glass-card category-card" data-category="beverages"><div class="category-icon">🧃</div><h3>Beverages</h3></a>
+            <a href="#" class="glass-card category-card" data-category="spices"><div class="category-icon">🌶️</div><h3>Spices</h3></a>
+        </div>
+    </section>
+    <section id="products" class="section">
+        <h2 class="section-title">Featured <span class="text-gradient">Products</span></h2>
+        <div class="product-grid" id="product-container"></div>
+    </section>
+    <section id="offers" class="section">
+        <div class="glass-panel" style="padding: 60px; text-align: center;">
+            <h2 class="section-title">Special <span class="text-gradient">Offers</span></h2>
+            <p style="margin-bottom: 30px; font-size: 1.2rem;">Get up to 30% off on organic fresh produce this weekend.</p>
+       
